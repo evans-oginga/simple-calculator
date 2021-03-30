@@ -4,6 +4,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>A simple calculator</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -15,28 +17,28 @@
 					</td>
 				</tr>
 				<tr>
-					<td><input type="button" name="one" value="1"></td>
-					<td><input type="button" name="two" value="2"></td>
-					<td><input type="button" name="three" value="3"></td>
-					<td><input type="button" name="plus" value="+"></td>
+					<td><input type="button" class="btn" name="one" value="1" onclick="showValueOne()"></td>
+					<td><input type="button" class="btn" name="two" value="2" onclick="showValueTwo()"></td>
+					<td><input type="button" class="btn" name="three" value="3" onclick="showValueThree()" ></td>
+					<td><input type="button" class="btn" name="plus" value="+" onclick="showOperatorAdd()"></td>
 				</tr>
 				<tr>
-					<td><input type="button" name="four" value="4"></td>
-					<td><input type="button" name="five" value="5"></td>
-					<td><input type="button" name="six" value="6"></td>
-					<td><input type="button" name="minus" value="-"></td>
+					<td><input type="button" class="btn" name="four" value="4" onclick="showValueFour()"></td>
+					<td><input type="button" class="btn" name="five" value="5" onclick="showValueFive()"></td>
+					<td><input type="button" class="btn" name="six" value="6" onclick="showValueSix()"></td>
+					<td><input type="button" class="btn" name="minus" value="-" onclick="showOperatorSubtract()"></td>
 				</tr>
 				<tr>
-					<td><input type="button" name="seven" value="7"></td>
-					<td><input type="button" name="eight" value="8"></td>
-					<td><input type="button" name="nine" value="9"></td>
-					<td><input type="button" name="times" value="*"></td>
+					<td><input type="button" class="btn" name="seven" value="7" onclick="showValueSeven()"></td>
+					<td><input type="button" class="btn" name="eight" value="8" onclick="showValueEight()"></td>
+					<td><input type="button" class="btn" name="nine" value="9" onclick="showValueNine()"></td>
+					<td><input type="button" class="btn" name="times" value="*" onclick="showOperatorMultiply()"></td>
 				</tr>
 				<tr>
-					<td><input type="button" name="clear" value="c"></td>
-					<td><input type="button" name="zero" value="0"></td>
-					<td><input type="button" name="results" value="="></td>
-					<td><input type="button" name="divide" value="/"></td>
+					<td><input type="button" class="btn" name="clear" value="c" onclick="clearScreen()"></td>
+					<td><input type="button" class="btn" name="zero" value="0" onclick="showValueZero()"></td>
+					<td><input type="button" class="btn" name="results" value="=" onclick="showResults()"></td>
+					<td><input type="button" class="btn" name="divide" value="/" onclick="showOperatorDivide()"></td>
 				</tr>
 			</table>			
 		</form>
